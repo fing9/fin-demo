@@ -31,6 +31,8 @@ class MemberServiceIntegrationTest {
         //then : 어떤 결과가 나와야한다.
         Member findMember = memberService.findOne(saveId).get();
         Assertions.assertThat(member.getName()).isEqualTo(findMember.getName());
+
+        Assertions.assertThat(member.getName()).isEqualTo(findMember.getName());
     }
 
     @Test
